@@ -12,6 +12,7 @@ Approach:
 * start by getting the data for one month out of one PDF.  Clean it and do all the other mandatory steps for the capstone.
   * I think that includes getting the stats on the set, dealing with missing values, finding outliers, etc.
   * I think there is a mandatory use of sql or excel -- figure out a way to use sql.
+  * Incorporate Tableau here as well, what the heck.
 * assess whether I can find and parse the pdf in situ on the web all in one go, or if it is a two step process to find, download, and parse.
   * based on assessment, do either one-step or two-step version
 * it would be nice to be able to compare these over time, so repeat the process for 1-n pdf files on the site
