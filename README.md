@@ -1,21 +1,19 @@
 # sc-capstone
 
-The question I want to ask is "are airfare prices lower for long haul flights, mile for mile, than short haul".
+The updated question I want to ask is "how do AirBnB rental rates and prices correlate with house sales and rental prices in Chicago over time".
 
 Mural board about the topic is:  https://app.mural.co/t/eyatzeck9578/m/eyatzeck9578/1696981775277/b5da6df705ca55cedd763367fd0fe45e8bc6d4e8?sender=ud56793e22b030d91cd068161
 
-Primary source for data is here:  https://www.transportation.gov/policy/aviation-policy/domestic-airline-consumer-airfare-report
-
-Data is published monthly in pdf form, so one thing I will need to do is figure out how to get the file (stretch goal -- most recent) and parse the PDF for data before cleaning it.
+Primary sources for data are here:  
+* Cook county price indices quarterly since 1997:  https://price-index.housingstudies.org/
+* AirBnB data for Chicago going back a year:  http://insideairbnb.com/get-the-data (pull multiple files for Chicago to get four quarters)
+* Rental comparisons year on year:  https://www.apartmentguide.com/blog/average-rent-in-chicago/
 
 Approach:
-* start by getting the data for one month out of one PDF.  Clean it and do all the other mandatory steps for the capstone.
-  * I think that includes getting the stats on the set, dealing with missing values, finding outliers, etc.
-  * I think there is a mandatory use of sql or excel -- figure out a way to use sql.
-  * Incorporate Tableau here as well, what the heck.
-* assess whether I can find and parse the pdf in situ on the web all in one go, or if it is a two step process to find, download, and parse.
-  * based on assessment, do either one-step or two-step version
-* it would be nice to be able to compare these over time, so repeat the process for 1-n pdf files on the site
-* stretch goal -- go find out which is the most recent and whether I have it or not in the database; pull it down.
-* Tableau integration is a bit down the road, but I could iterate on that as well. 
-* I started playing with BeautifulSoup for web parsing, for step 2, but before I do more of that, I want to see about doing the really basic data analysis stuff off of a pre-parsed file.
+* Combine data from the three sources to get year on year information for AirBnB, rentals, and sales prices
+   * stretch goal -- screen scrape to get the data from the pages where it is on the screen, as opposed to provided in file format
+   * do somthing in excel or sql.  Maybe initial analysis in excel to establish common language across data sets
+   * import all three
+   * massage in python  establish commonality for time frames and neighborhood names
+   * export to csv
+   * visualize in Tableau, looking for different patterns in different neighborhoods
