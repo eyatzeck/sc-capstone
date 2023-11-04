@@ -2,8 +2,6 @@
 
 The updated question I want to ask is "how do AirBnB rental rates and prices correlate with house sales and rental prices in Chicago over time".
 
-Mural board about the topic is:  https://app.mural.co/t/eyatzeck9578/m/eyatzeck9578/1696981775277/b5da6df705ca55cedd763367fd0fe45e8bc6d4e8?sender=ud56793e22b030d91cd068161
-
 Primary sources for data are here:  
 * Cook county price indices quarterly since 1997:  https://price-index.housingstudies.org/
 * AirBnB data for Chicago going back a year:  http://insideairbnb.com/get-the-data (pull multiple files for Chicago to get four quarters)
