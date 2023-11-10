@@ -1,17 +1,13 @@
 # sc-capstone
 
-The updated question I want to ask is "how do AirBnB rental rates and prices correlate with house sales and rental prices in Chicago over time".
+Topic is "how to evaluate what a winning investment strategy is for buying stocks associated with companies that develop electric vehicles.
 
-Primary sources for data are here:  
-* Cook county price indices quarterly since 1997:  https://price-index.housingstudies.org/
-* AirBnB data for Chicago going back a year:  http://insideairbnb.com/get-the-data (pull multiple files for Chicago to get four quarters)
-* Rental comparisons year on year:  https://www.apartmentguide.com/blog/average-rent-in-chicago/
+**Sharpe Ratio evaluation for Tesla versus competitors**
 
-Approach:
-* Combine data from the three sources to get year on year information for AirBnB, rentals, and sales prices
-   * stretch goal -- screen scrape to get the data from the pages where it is on the screen, as opposed to provided in file format
-   * do somthing in excel or sql.  Maybe initial analysis in excel to establish common language across data sets
-   * import all three
-   * massage in python  establish commonality for time frames and neighborhood names
-   * export to csv
-   * visualize in Tableau, looking for different patterns in different neighborhoods
+Method to calculate Sharpe ratio using python comes from https://projects.datacamp.com/projects/66
+
+Daily data is coming from https://finance.yahoo.com/quote/TSLA/history?p=TSLA  First pass data was exported on 9-Nov-2023.  I may do another pass where I download it for the day with web scraping.  That would be cool!
+
+List of Tesla competitors came from here:  https://money.usnews.com/investing/stock-market-news/slideshows/upstart-tesla-competitors-to-watch
+
+Great article on data cleaning:  https://towardsdatascience.com/data-cleaning-with-python-and-pandas-detecting-missing-values-3e9c6ebcf78b#:~:text=Using%20the%20isnull()%20method,NA%E2%80%9D%20types%20as%20missing%20values.
